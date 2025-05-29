@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluty Tecnologia</title>
+
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navigation">
+        <div class="wrapper">
+            <a class="logo" href="#">
+                <img src="./assets/logo.png" alt="Soluty Tecnologia Logo">
+            </a>
+
+            <div class="menu">
+                <ul> <li><a onclick="closeMenu()" href="#welcome-content">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#banner-slider-area">Destaque</a></li>
+                </ul>
+
+                <a class="button" onclick="closeMenu()" href="https://wa.me/558499507938" target="_blank">
+                    <span class="button-content">
+                        <i class="fab fa-whatsapp"></i> Fale Conosco
+                    </span>
+                </a>
+
+                <ul class="social-links"> <li>
+                        <a target="_blank" href="https://www.instagram.com/solutytecnologia.antoniel/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614
+                                4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614
+                                1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935
+                                13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382
+                                16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455
+                                14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616
+                                8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007
+                                8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646
+                                8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a target="_blank" href="https://www.youtube.com/@solutytecnologia"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382
+                                5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4
+                                11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824
+                                2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556
+                                0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596
+                                17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842
+                                18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46
+                                18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382
+                                18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059
+                                13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://wa.me/558499507938">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C13.79 22 15.44 21.53 16.86 20.76L20.66 22L19.91 18.3C21.06 16.98 21.75 15.28 21.75 13.41C22 7.53 17.52 2 12 2ZM17.47 14.39C17.27 14.31 16.11 13.75 15.93 13.69C15.76 13.63 15.62 13.63 15.47 13.81C15.32 13.99 14.93 14.51 14.77 14.69C14.62 14.86 14.48 14.87 14.28 14.79C13.41 14.45 12.32 14.01 11.44 13.17C10.73 12.5 10.22 11.66 10.04 11.36C9.95 11.21 10.03 11.08 10.12 10.99C10.2 10.91 10.3 10.78 10.42 10.66C10.46 10.62 10.49 10.52 10.49 10.44C10.49 10.33 10.46 10.24 10.42 10.18C10.38 10.12 9.93 9.02999 9.76 8.61999C9.6 8.23999 9.43 8.26999 9.3 8.26999C9.22 8.26999 9.09 8.26999 8.96 8.26999C8.83 8.26999 8.56 8.35999 8.43 8.58999C7.93 9.24999 7.61 10.03 7.61 10.92C7.61 11.81 7.93 12.59 8.35 13.1C9.12 14.27 10.31 15.22 11.76 15.77C12.22 15.94 12.58 16.06 13.01 16.15C13.44 16.24 13.86 16.24 14.32 16.12C14.96 15.96 15.51 15.41 15.78 14.87C15.94 14.52 15.94 14.19 15.86 13.97C15.82 13.92 15.64 13.85 15.47 13.78L17.47 14.39Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                    <path d="M10 12H30" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                    <path d="M18 28L30 28" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero-banner">
+        </section>
+
+    <section id="welcome-content">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>BEM-VINDO À SOLUTY TECNOLOGIA</h4>
+                    <h1>Soluções em Tecnologia para Você e sua Empresa</h1>
+                </header>
+
+                <div class="content">
+                    <p>
+                        Na Soluty, conectamos tecnologia e praticidade para transformar o seu dia a dia.
+Oferecemos soluções inteligentes e personalizadas que otimizam seus processos e impulsionam seus resultados com eficiência e inovação.
+                    </p>
+
+                    <a class="button" href="https://wa.me/558499507938" target="_blank">
+                        <span class="button-content">
+                            <i class="fab fa-whatsapp"></i> Fale Conosco
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img
+                    src="./assets/mulher-negra-com-moletom-verde-com-as-duas-maos-no-peito.png"
+                    alt="Soluções tecnológicas inovadoras" />
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>+500</h3> <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat">
+                    <h3>+2</h3> <p>Especialistas em TI</p>
+                </div>
+                <div class="stat">
+                    <h3>+12</h3> <p>Anos de Experiência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="wrapper">
+            <header>
+                <h4>FEEDBACK DE CLIENTES</h4>
+                <h2>O Que Nossos Clientes Dizem</h2>
+            </header>
+
+            <div class="google-review-button-container">
+                 <a class="button" href="https://g.page/r/CT_JHzIp-n6KEBM/review" target="_blank">
+                    <span class="button-content">
+                        <i class="fab fa-google"></i> Deixe sua Avaliação no Google
+                    </span>
+                </a>
+            </div>
+
+            <div class="feedback-cards">
+                <div class="card feedback-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="feedback-text">"Serviço excepcional e atendimento rápido! Resolveram meu problema com o computador em poucas horas. Recomendo a todos!"</p>
+                    <h4 class="client-name">- Tiago Sousa.</h4>
+                </div>
+                <div class="card feedback-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="feedback-text">"Trabalho excelente!Compromisso e dedicação. Recomendo 👏🏻👏🏻"</p>
+<br>
+<br>
+                    <h4 class="client-name">- Marcos Santos.</h4>
+                </div>
+                <div class="card feedback-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="feedback-text">"Precisei formatar meu notebook e instalar alguns programas específicos para trabalho. O serviço foi ágil e ficou perfeito. Recomendo demais!"</p>
+                    <h4 class="client-name">- Jansuêr Ribeiro.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Serviços</h4>
+                <h2>Nossas Especialidades</h2>
+            </header>
+            <div class="content">
+                <div class="cards">
+
+                    <div class="card service-card">
+                        <div class="service-icon-container">
+                            <i class="fas fa-laptop-code fa-4x"></i>
+                        </div>
+                        <h3>Formatação em Windows (Notebook e Desktop)</h3>
+                        <p class="service-price">R$ 116,00</p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="service-icon-container">
+                            <i class="fas fa-code fa-4x"></i>
+                        </div>
+                        <h3>Desenvolvimento de Sites</h3>
+                        <p class="service-price">A partir de R$ 1250,00</p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="service-icon-container">
+                            <i class="fas fa-download fa-4x"></i>
+                        </div>
+                        <h3>Instalação de Programas</h3>
+                        <p class="service-price">A partir de R$ 30,00</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner-slider-area">
+        <div class="wrapper">
+            <header>
+                 <h2>Nossos Destaques</h2>
+            </header>
+            <div class="swiper banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/banner1.png" alt="Destaque Banner 1"></div>
+                    <div class="swiper-slide"><img src="./assets/banner2.png" alt="Destaque Banner 2"></div>
+                    <div class="swiper-slide"><img src="./assets/banner3.png" alt="Destaque Banner 3"></div>
+                    <div class="swiper-slide"><img src="./assets/banner4.png" alt="Destaque Banner 4"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about"> 
+        <div class="wrapper">
+            <img src="./assets/banner5.png" alt="Soluty Tecnologia Informática e Programação Banner">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contato com a gente!</h2>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="var(--accent-on-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="var(--accent-on-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.49997H17.51" stroke="var(--accent-on-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="https://www.instagram.com/solutytecnologia.antoniel/" target="_blank">
+                                Siga-nos: @solutytecnologia.antoniel
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="var(--accent-on-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="var(--accent-on-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            antonielsousa@solutytecnologia.com
+                        </li>
+                    </ul>
+
+                    <a class="button" target="_blank" href="https://wa.me/558499507938">
+                        <span class="button-content">
+                            <i class="fab fa-whatsapp"></i> Fale Conosco via WhatsApp
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-b">
+                <a href="https://wa.me/558499507938" target="_blank" aria-label="Entre em contato via WhatsApp (imagem ilustrativa de homem ao celular)">
+                    <img
+                        src="./assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+                        alt="Homem negro com moletom bege mexendo no celular - Clique para falar no WhatsApp" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="col-a">
+                <a class="logo" href="#welcome-content">
+                    <img src="./assets/logo.png" alt="Soluty Tecnologia Logo">
+                </a>
+                <p>©2025 Soluty Tecnologia. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-b">
+                <ul class="social-links">
+                     <li>
+                        <a target="_blank" href="https://www.instagram.com/solutytecnologia.antoniel/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614
+                                4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614
+                                1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935
+                                13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382
+                                16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455
+                                14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616
+                                8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007
+                                8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646
+                                8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a target="_blank" href="https://www.youtube.com/@solutytecnologia"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382
+                                5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4
+                                11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824
+                                2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556
+                                0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596
+                                17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842
+                                18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46
+                                18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382
+                                18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059
+                                13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://wa.me/558499507938">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C13.79 22 15.44 21.53 16.86 20.76L20.66 22L19.91 18.3C21.06 16.98 21.75 15.28 21.75 13.41C22 7.53 17.52 2 12 2ZM17.47 14.39C17.27 14.31 16.11 13.75 15.93 13.69C15.76 13.63 15.62 13.63 15.47 13.81C15.32 13.99 14.93 14.51 14.77 14.69C14.62 14.86 14.48 14.87 14.28 14.79C13.41 14.45 12.32 14.01 11.44 13.17C10.73 12.5 10.22 11.66 10.04 11.36C9.95 11.21 10.03 11.08 10.12 10.99C10.2 10.91 10.3 10.78 10.42 10.66C10.46 10.62 10.49 10.52 10.49 10.44C10.49 10.33 10.46 10.24 10.42 10.18C10.38 10.12 9.93 9.02999 9.76 8.61999C9.6 8.23999 9.43 8.26999 9.3 8.26999C9.22 8.26999 9.09 8.26999 8.96 8.26999C8.83 8.26999 8.56 8.35999 8.43 8.58999C7.93 9.24999 7.61 10.03 7.61 10.92C7.61 11.81 7.93 12.59 8.35 13.1C9.12 14.27 10.31 15.22 11.76 15.77C12.22 15.94 12.58 16.06 13.01 16.15C13.44 16.24 13.86 16.24 14.32 16.12C14.96 15.96 15.51 15.41 15.78 14.87C15.94 14.52 15.94 14.19 15.86 13.97C15.82 13.92 15.64 13.85 15.47 13.78L17.47 14.39Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTopButton" href="#welcome-content">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#0A2A58"/>
+            <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"/>
+            <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <a href="https://wa.me/558499507938" class="floating-whatsapp" target="_blank"> 
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
