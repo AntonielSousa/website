@@ -329,7 +329,8 @@ body.menu-expanded button.close-menu path {
     stroke: var(--text-on-dark-bg);
 }
 
-/*=== HERO BANNER ===================*/
+/*=== HERO BANNER (Comentado ou Removido) ===================*/
+/*
 #hero-banner { 
     padding-block: 0;
     height: 100vh;
@@ -341,11 +342,13 @@ body.menu-expanded button.close-menu path {
     position: relative;
     margin-top: var(--nav-height);
 }
+*/
 
 
 /*=== WELCOME CONTENT ==============================*/
 #welcome-content { 
     /* Using global section padding */
+    margin-top: var(--nav-height); /* <<== ADICIONADO PARA COMPENSAR NAVBAR */
 }
 
 #welcome-content .wrapper {
@@ -753,7 +756,7 @@ footer .social-links a:hover svg path {
     #contact .wrapper {
         display: grid; 
     }
-    #hero-banner,
+    /* #hero-banner, (Removido/Comentado) */
     #services .wrapper {
         display: block; 
     }
@@ -769,11 +772,13 @@ footer .social-links a:hover svg path {
     section {
         padding-block: 12rem; /* ADJUSTED: Reduced from 16rem */
     }
-    #hero-banner {
+    /*
+    #hero-banner { (Removido/Comentado)
         padding-block: 0; 
         height: calc(100vh - var(--nav-height));
         margin-top: var(--nav-height);
     }
+    */
     #welcome-content { padding-block: 10rem; } /* Slightly less than global desktop for this section */
     #about { padding-block: 0; }
     #banner-slider-area { padding-block: 8rem; } /* Maintained specific padding */
