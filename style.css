@@ -823,7 +823,7 @@ footer .social-links a:hover svg path {
         list-style: none;
         margin: 0;
         padding: 0;
-        gap: 3.2rem;
+        gap: 2.4rem; /* Adjusted gap from 3.2rem to 2.4rem for more space */
         margin-right: auto; 
     }
 
