@@ -125,7 +125,7 @@ Se desejar contribuir com código:
 
 * **Desenvolvedor Principal:** Antoniel Sousa
 
-* **Instagram:** [@solutytecnologia.antoniel](https://www.instagram.com/solutytecnologia.antoniel/)
+* **Instagram:** [@solutytecnologia](https://www.instagram.com/solutytecnologia/)
 
 * **E-mail:** antonielsousa@solutytecnologia.com
 
