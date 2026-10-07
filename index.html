@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluty Tecnologia - Soluções em TI</title>
-    <meta name="description" content="A Soluty Tecnologia oferece soluções inteligentes em TI, desenvolvimento de sites, formatação de computadores e uma loja online completa com os melhores produtos de tecnologia.">
+    <meta name="description" content="Soluty Tecnologia: assistência técnica, formatação, upgrades, desenvolvimento de sites e soluções digitais em Natal e região. Confira também ofertas de maquininhas Ton.">
+    <meta name="theme-color" content="#060913">
+    <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="SEU_CODIGO_AQUI" />
     <link rel="stylesheet" href="./style.css"/>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
@@ -24,7 +26,7 @@
 
             <div class="search-container">
                 <form id="searchForm" onsubmit="event.preventDefault();">
-                    <input type="text" id="searchInput" placeholder="O que você está procurando hoje?" autocomplete="off">
+                    <input type="text" id="searchInput" placeholder="Busque um serviço ou produto..." autocomplete="off">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
@@ -32,21 +34,16 @@
             <div class="menu">
                 <ul>
                     <li><a onclick="closeMenu()" href="#welcome-content">Início</a></li>
-                    <li><a onclick="closeMenu()" href="#products">Produtos</a></li>
-                    <li><a onclick="closeMenu()" href="#banner-slider-area">Destaques</a></li>
-                    <li><a onclick="closeMenu()" href="https://loja.infinitepay.io/suporte2p25" target="_blank">Loja Completa</a></li>
+                    <li><a onclick="closeMenu()" href="#products">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#ton">Maquininhas Ton</a></li>
+                    <li><a onclick="closeMenu()" href="#testimonials">Avaliações</a></li>
+                    <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
                 </ul>
                 
                 <div class="nav-actions">
-                    <a href="#contact" class="nav-icon-link" aria-label="Minha Conta">
-                        <i class="far fa-user"></i>
-                        <span>Entrar</span>
-                    </a>
-                    <a href="https://loja.infinitepay.io/suporte2p25" target="_blank" class="nav-icon-link" aria-label="Carrinho">
-                        <div class="cart-icon-wrapper">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count" id="cartCount">0</span>
-                        </div>
+                    <a href="https://loja.infinitepay.io/suporte2p25" target="_blank" rel="noopener" class="nav-store-link" aria-label="Abrir loja online">
+                        <i class="fas fa-store"></i>
+                        <span>Loja Online</span>
                     </a>
                 </div>
 
@@ -75,12 +72,13 @@
     <section id="promo-hero-banner">
         <div class="wrapper">
             <div class="promo-banner-content">
-                <div class="promo-badge-headline">OFERTAS DE TECNOLOGIA</div>
-                <h2>Dê um Upgrade na sua Máquina Hoje Mesmo!</h2>
-                <p>Descontos de até 20% em SSDs, formatações completas e montagens de PC Gamer com suporte VIP.</p>
+                <div class="promo-badge-headline">TECNOLOGIA PARA PESSOAS E NEGÓCIOS</div>
+                <h2>Soluções em TI que fazem sua tecnologia trabalhar por você.</h2>
+                <p>Assistência técnica, upgrades, desenvolvimento de sites e soluções para vendas. Atendimento em Natal e região com suporte direto e especializado.</p>
                 <div class="promo-cta-group">
-                    <a href="#products" class="button"><span class="button-content"><i class="fas fa-th-large"></i> Ver Encartes</span></a>
-                    <a href="https://wa.me/558499507938" target="_blank" class="button promo-secondary-btn"><span class="button-content"><i class="fab fa-whatsapp"></i> Chamar Técnico</span></a>
+                    <a href="#products" class="button"><span class="button-content"><i class="fas fa-tools"></i> Conhecer Serviços</span></a>
+                    <a href="#ton" class="button ton-hero-btn"><span class="button-content"><i class="fas fa-credit-card"></i> Ver Maquininhas Ton</span></a>
+                    <a href="https://wa.me/558499507938?text=Olá!%20Vim%20pelo%20site%20da%20Soluty%20Tecnologia%20e%20gostaria%20de%20um%20atendimento." target="_blank" rel="noopener" class="button promo-secondary-btn"><span class="button-content"><i class="fab fa-whatsapp"></i> Falar com a Soluty</span></a>
                 </div>
             </div>
         </div>
@@ -91,11 +89,11 @@
             <div class="col-a">
                 <header>
                     <h4>BEM-VINDO À SOLUTY TECNOLOGIA</h4>
-                    <h1>Soluções e Produtos de Tecnologia em um só lugar</h1>
+                    <h1>Atendimento técnico, desenvolvimento e soluções digitais em um só lugar</h1>
                 </header>
                 <div class="content">
                     <p>
-                        Na Soluty, conectamos tecnologia e praticidade para transformar o seu dia a dia. Oferecemos o melhor em hardware, manutenção especializada e desenvolvimento digital para impulsionar seus resultados.
+                        Na Soluty Tecnologia, unimos suporte técnico, manutenção, upgrades e desenvolvimento web para atender pessoas e pequenos negócios com agilidade, clareza e soluções sob medida.
                     </p>
                     <a class="button" href="https://wa.me/558499507938" target="_blank">
                         <span class="button-content">
@@ -124,8 +122,8 @@
     <section id="products">
         <div class="wrapper">
             <header>
-                <h4>Catálogo Digital</h4>
-                <h2>Produtos e Serviços em Destaque</h2>
+                <h4>SERVIÇOS E SOLUÇÕES</h4>
+                <h2>Como a Soluty pode ajudar você</h2>
             </header>
             <div class="content">
                 <div class="product-grid" id="productGrid">
@@ -271,6 +269,47 @@
         </div>
     </section>
 
+    <section id="ton" aria-labelledby="ton-title">
+        <div class="wrapper ton-wrapper">
+            <div class="ton-copy">
+                <span class="section-kicker ton-kicker"><i class="fas fa-credit-card"></i> SOLUÇÕES PARA VENDAS</span>
+                <h2 id="ton-title">Maquininhas Ton para o seu negócio</h2>
+                <p class="ton-lead">Escolha sua maquininha Ton pelo link oficial de indicação da Soluty Tecnologia e confira as condições disponíveis diretamente no catálogo.</p>
+                <div class="ton-benefits">
+                    <div class="ton-benefit"><i class="fas fa-home"></i><div><strong>Sem aluguel</strong><span>Você escolhe o modelo e consulta as condições da adesão.</span></div></div>
+                    <div class="ton-benefit"><i class="fas fa-percent"></i><div><strong>Taxas competitivas</strong><span>Confira no catálogo as taxas vigentes para cada plano.</span></div></div>
+                    <div class="ton-benefit"><i class="fas fa-shield-alt"></i><div><strong>Garantia vitalícia</strong><span>Conforme as condições oficiais informadas pela Ton.</span></div></div>
+                </div>
+                <div class="ton-actions">
+                    <a class="button ton-primary-btn" href="https://ton.com.br/catalogo/?referrer=037913F6-5B22-4731-8812-B1D1F39A6074&userAnticipation=0&utm_medium=invite_share&utm_source=revendedor" target="_blank" rel="noopener sponsored">
+                        <span class="button-content"><i class="fas fa-shopping-bag"></i> Ver modelos e preços</span>
+                    </a>
+                    <a class="ton-help-link" href="https://wa.me/558499507938?text=Olá!%20Quero%20ajuda%20para%20escolher%20uma%20maquininha%20Ton." target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Precisa de ajuda para escolher?
+                    </a>
+                </div>
+                <p class="ton-disclaimer">A compra é concluída no ambiente oficial da Ton. Preços, taxas, promoções e disponibilidade podem mudar sem aviso prévio.</p>
+            </div>
+            <div class="ton-showcase" aria-hidden="true">
+                <div class="ton-glow"></div>
+                <div class="ton-terminal">
+                    <div class="terminal-top"><span></span><span></span><span></span></div>
+                    <div class="terminal-screen">
+                        <i class="fas fa-wifi"></i>
+                        <span>Venda aprovada</span>
+                        <strong>R$ 250,00</strong>
+                    </div>
+                    <div class="terminal-keypad">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="terminal-brand">ton</div>
+                </div>
+                <div class="ton-floating-card card-one"><i class="fas fa-bolt"></i><span>Venda rápida</span></div>
+                <div class="ton-floating-card card-two"><i class="fas fa-store"></i><span>Para seu negócio</span></div>
+            </div>
+        </div>
+    </section>
+
     <section id="testimonials">
         <div class="wrapper">
             <header>
@@ -369,7 +408,15 @@
                 </div>
             </div>
             <div class="col-b">
-                <a href="https://wa.me/558499507938" target="_blank" aria-label="Entre em contato via WhatsApp">
+                <div class="contact-card">
+                    <span class="contact-card-icon"><i class="fas fa-headset"></i></span>
+                    <h3>Atendimento direto</h3>
+                    <p>Conte o que você precisa e receba orientação sobre manutenção, upgrades, sites ou soluções para o seu negócio.</p>
+                    <div class="contact-card-status"><span class="status-dot"></span> Atendimento via WhatsApp</div>
+                    <a class="button" href="https://wa.me/558499507938?text=Olá!%20Vim%20pelo%20site%20da%20Soluty%20Tecnologia." target="_blank" rel="noopener">
+                        <span class="button-content"><i class="fab fa-whatsapp"></i> Iniciar atendimento</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
